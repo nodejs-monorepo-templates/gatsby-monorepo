@@ -1,0 +1,39 @@
+branches:
+  except:
+    - draft
+    - tmp
+    - /.*\.(draft|tmp)$/
+    - /^(draft|tmp)\..*/
+
+language: node_js
+
+node_js:
+  - '8.9.0'
+  - '11'
+
+cache:
+  directories:
+    - $HOME/.pnpm-store
+    - $HOME/.npm
+    - $HOME/.nvm
+    - $HOME/.node-gyp
+    - $HOME/.node_libraries
+
+before_install:
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - pnpm --version
+  - bash ci/before-install.sh
+
+install:
+  - pnpm recursive install
+  - bash ci/install.sh
+
+script:
+  - pnpm test
+  - pnpm run build
+
+after_script:
+  - bash ci/after-script.sh
+
+env:
+  - SHOW_SPAWN_CMD=true

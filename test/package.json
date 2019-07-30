@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "tslib": "^1.9.3",
+    "@types/node": "^11.11.1"
+  }
+}

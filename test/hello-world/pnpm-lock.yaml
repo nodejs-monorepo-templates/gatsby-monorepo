@@ -1,0 +1,5 @@
+dependencies:
+  hello-world: 'link:../../packages/hello-world'
+lockfileVersion: 5
+specifiers:
+  hello-world: 'file:../../packages/hello-world'

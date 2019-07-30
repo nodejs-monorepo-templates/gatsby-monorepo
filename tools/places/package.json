@@ -1,0 +1,13 @@
+{
+  "name": "@tools/places",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "bin": {
+    "places.tool": "bin.js",
+    "places": "bin.js"
+  },
+  "dependencies": {
+    "@types/node": "^11.11.1"
+  }
+}

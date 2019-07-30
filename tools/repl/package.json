@@ -1,0 +1,16 @@
+{
+  "name": "@tools/repl",
+  "version": "0.0.0",
+  "private": true,
+  "bin": {
+    "repl": "bin.js",
+    "console": "bin.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "glob": "^7.1.3",
+    "glob-promise": "^3.4.0",
+    "@tools/preloaded-node": "file:../preloaded-node",
+    "@tools/places": "file:../places"
+  }
+}

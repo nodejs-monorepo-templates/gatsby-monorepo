@@ -1,0 +1,4 @@
+names:
+  - git
+  - node
+  - pnpm # for installing packages and managing monorepo

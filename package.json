@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/nodejs-monorepo-templates/typescript-monorepo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodejs-monorepo-templates/typescript-monorepo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo/issues"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tslint": "^5.13.1",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.3.3333",
+    "toolcheck": "^0.0.5",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.1",
+    "@tools/scripts": "file:./tools/scripts"
+  },
+  "scripts": {
+    "mismatches": "execute mismatches",
+    "repl": "node tools/repl/bin.js",
+    "console": "node tools/repl/bin.js",
+    "preloaded-node": "node tools/preloaded-node/bin.js",
+    "execute": "execute",
+    "workspace": "execute workspace",
+    "standardjs": "execute runStandardJS",
+    "standardjs:fix": "execute runStandardJS --fix",
+    "tslint": "execute runTSLint",
+    "tslint:fix": "execute runTSLint --fix",
+    "test": "execute test",
+    "build": "execute build",
+    "clean": "execute clean",
+    "clean-typescript-build": "execute cleanTypescriptBuild",
+    "git-tag-versions": "execute gitTagVersions",
+    "git-tag-versions:dry": "execute gitTagVersions --dry",
+    "project-publish": "execute publish",
+    "project-publish:dry": "execute publish --dry"
+  },
+  "standard": {
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "engines": {
+    "pnpm": ">= 2.16.0"
+  }
+}

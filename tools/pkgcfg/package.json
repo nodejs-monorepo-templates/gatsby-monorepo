@@ -1,0 +1,10 @@
+{
+  "name": "@tools/pkgcfg",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "js-yaml": "^3.12.2",
+    "@tools/places": "../places",
+    "@types/js-yaml": "^3.12.0"
+  }
+}
