@@ -305,6 +305,13 @@ function main ({ testPath }) {
     return getResult()
   }
 
+  if (resolvedPath.startsWith(places.apps)) {
+    mustNotHaveName()
+    mustBePrivate()
+    mustNotHaveVersion()
+    return getResult()
+  }
+
   {
     const expectedPlaces = Object.values(places).join(' or ')
     reasons.push(`Unexpected path: package.json are expected to be in ${expectedPlaces}`)
