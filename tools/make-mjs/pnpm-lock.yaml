@@ -108,5 +108,5 @@ packages:
 specifiers:
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
-  fs-extra: ^8.0.0
+  fs-extra: ^8.1.0
   fs-tree-utils: ^0.1.6
