@@ -20,7 +20,7 @@
     "@tools/docs": "file:../docs",
     "@tools/git-tag-versions": "file:../git-tag-versions",
     "@tools/ignore-file": "file:../ignore-file",
-    "@tools/publish-docs": "file:../publish-docs",
+    "@tools/publish-web-pages": "file:../publish-web-pages",
     "@tools/publish-tag-push": "file:../publish-tag-push",
     "@tools/jest": "file:../jest",
     "@tools/make-mjs": "file:../make-mjs",

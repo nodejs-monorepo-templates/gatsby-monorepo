@@ -132,7 +132,7 @@ abstract class Dict {
         ...args
       ).exit.onerror()
 
-      await this.callCmd('publishDocs')
+      await this.callCmd('publishWebPages')
       await this.callCmd('postpublish')
     }
   )
@@ -249,9 +249,9 @@ abstract class Dict {
     this.mkspawn(commands.jest)
   )
 
-  public readonly publishDocs = new Command(
+  public readonly publishWebPages = new Command(
     'Publish documentation to gh-pages',
-    this.mkspawn(commands.publishDocs)
+    this.mkspawn(commands.publishWebPages)
   )
 
   public readonly updateDocs = new Command(
@@ -259,7 +259,7 @@ abstract class Dict {
     async () => {
       await this.callCmd('cleanDocs')
       await this.callCmd('buildDocs')
-      await this.callCmd('publishDocs')
+      await this.callCmd('publishWebPages')
     }
   )
 
