@@ -21,6 +21,7 @@ temp.*
 /*/*/.npmignore
 *.tsbuildinfo
 .vscode
+/dist
 
 # Lockfiles
 #   * Yarn's and NPM's are ignored for I use PNPM
