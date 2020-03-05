@@ -1,0 +1,10 @@
+{
+  "name": "@tools/gh-pages",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "@types/gh-pages": "^2.0.1",
+    "@tools/preloaded-node": "file:../preloaded-node"
+  }
+}

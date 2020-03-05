@@ -8,16 +8,17 @@ branches:
 language: node_js
 
 node_js:
-  - '8.9.0'
-  - '11'
+  - '12.11.0'
+  - '13'
 
 cache:
   directories:
     - $HOME/.pnpm-store
-    - $HOME/.npm
-    - $HOME/.nvm
     - $HOME/.node-gyp
     - $HOME/.node_libraries
+
+before_cache:
+  - pnpm store prune
 
 before_install:
   - curl -L https://unpkg.com/@pnpm/self-installer | node
@@ -29,7 +30,7 @@ install:
   - bash ci/install.sh
 
 script:
-  - pnpm test
+  - pnpm run test:ci
   - pnpm run build
 
 after_script:

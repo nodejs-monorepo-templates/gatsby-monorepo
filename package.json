@@ -2,43 +2,50 @@
   "private": true,
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/nodejs-monorepo-templates/typescript-monorepo#readme",
+  "homepage": "https://github.com/nodejs-monorepo-templates/typescript-monorepo-esm#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodejs-monorepo-templates/typescript-monorepo.git"
+    "url": "git+https://github.com/nodejs-monorepo-templates/typescript-monorepo-esm.git"
   },
   "bugs": {
-    "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo/issues"
+    "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo-esm/issues"
   },
   "devDependencies": {
-    "standard": "^13.1.0",
-    "tslint": "^5.18.0",
-    "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.5.3",
-    "toolcheck": "^0.0.5",
-    "@types/jest": "^24.0.16",
-    "@types/node": "^12.6.8",
+    "standard": "^14.3.1",
+    "tslint": "^6.0.0",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.8.3",
+    "toolcheck": "^0.1.4",
+    "tslib": "^1.11.1",
+    "@types/jest": "^25.1.3",
+    "@types/node": "^13.7.7",
     "@tools/scripts": "file:./tools/scripts"
   },
   "scripts": {
+    "new": "execute new",
+    "add": "execute add",
     "mismatches": "execute mismatches",
     "repl": "node tools/repl/bin.js",
     "console": "node tools/repl/bin.js",
     "preloaded-node": "node tools/preloaded-node/bin.js",
     "execute": "execute",
+    "glob": "execute glob",
     "workspace": "execute workspace",
     "standardjs": "execute runStandardJS",
     "standardjs:fix": "execute runStandardJS --fix",
     "tslint": "execute runTSLint",
     "tslint:fix": "execute runTSLint --fix",
     "test": "execute test",
+    "test:ci": "execute testAll",
+    "test:no-coverage": "execute testWithoutCoverage",
     "build": "execute build",
     "clean": "execute clean",
     "clean-typescript-build": "execute cleanTypescriptBuild",
     "git-tag-versions": "execute gitTagVersions",
     "git-tag-versions:dry": "execute gitTagVersions --dry",
     "project-publish": "execute publish",
-    "project-publish:dry": "execute publish --dry"
+    "project-publish:dry": "execute publish --dry",
+    "publish-tag-push": "execute publishTagPush"
   },
   "standard": {
     "env": {
@@ -47,6 +54,7 @@
     }
   },
   "engines": {
-    "pnpm": ">= 2.16.0"
+    "node": ">= 12.11.0",
+    "pnpm": ">= 3.8.0"
   }
 }
