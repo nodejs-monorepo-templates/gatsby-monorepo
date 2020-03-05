@@ -7,12 +7,12 @@ const DEFAULT_OPTIONS: Options = { dotfiles: true }
 
 export async function main () {
   process.chdir(places.project)
-  console.info('Publishing documentation...')
+  console.info('Publishing website...')
 
   for (const options of optionsList) {
     const fullOptions = { ...DEFAULT_OPTIONS, ...options }
     console.info('gh-pages>', fullOptions)
-    await publish('docs', fullOptions)
+    await publish(places.dist, fullOptions)
   }
 }
 
