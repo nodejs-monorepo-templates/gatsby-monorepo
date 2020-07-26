@@ -11,7 +11,7 @@ export async function main () {
 
   for (const options of optionsList) {
     const fullOptions = { ...DEFAULT_OPTIONS, ...options }
-    console.info('gh-pages>', fullOptions)
+    console.info('web-pages>', fullOptions)
     await publish(places.dist, fullOptions)
   }
 }
