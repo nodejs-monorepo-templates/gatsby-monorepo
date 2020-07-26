@@ -19,18 +19,26 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        pnpm:
+          - 5.0.2
         vars:
-          - node: 12.x
+          - id: 0
+            node: 12.x
             cmd: pnpm run test:ci
-          - node: 13.x
+          - id: 1
+            node: 14.x
             cmd: pnpm run test:ci
-          - node: 13.x
+          - id: 2
+            node: 14.x
             cmd: pnpx tsc --noEmit
-          - node: 13.x
+          - id: 3
+            node: 14.x
             cmd: pnpm run glob testWithoutCoverage '**/package.json'
-          - node: 13.x
+          - id: 4
+            node: 14.x
             cmd: pnpm run glob testWithoutCoverage '**/*.ts' '**/*.js'
-          - node: 13.x
+          - id: 5
+            node: 14.x
             pnpm: --frozen-lockfile
     steps:
       - uses: actions/checkout@v1
@@ -38,10 +46,22 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.vars.node }}
+      - name: Cache PNPM store
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.pnpm-store/v3
+          key: pnpm5-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm5-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+            pnpm5-${{ matrix.vars.id }}-
+            pnpm5-
       - name: Install pnpm
-        run: curl -L https://unpkg.com/@pnpm/self-installer | node
-      - name: Install dependencies
-        run: pnpm recursive install ${{ matrix.vars.pnpm }}
+        uses: pnpm/action-setup@v1.2.0
+        with:
+          version: ${{ matrix.pnpm }}
+          run_install: |
+            recursive: true
+            args: [ ${{ matrix.vars.pnpm }} ]
       - name: Test
         env:
           SHOW_SPAWN_CMD: 'true'
