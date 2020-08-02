@@ -265,7 +265,7 @@ abstract class Dict {
 
   public readonly publishWebPages = new Command(
     'Publish documentation to gh-pages',
-    this.mkspawn(commands.publishWebPages)
+    this.mkspawn(commands.publishWebPages),
   )
 
   public readonly updateDocs = new Command(
@@ -274,7 +274,7 @@ abstract class Dict {
       await this.callCmd('cleanDocs')
       await this.callCmd('buildDocs')
       await this.callCmd('publishWebPages')
-    }
+    },
   )
 
   public readonly new = new Command(
