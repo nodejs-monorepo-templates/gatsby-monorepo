@@ -16,6 +16,7 @@
     "@tools/gh-pages": "file:../gh-pages",
     "@tools/triple-slash-directives": "file:../triple-slash-directives",
     "@tools/clean-typescript-build": "file:../clean-typescript-build",
+    "@tools/app": "file:../app",
     "@tools/add-dependency": "file:../add-dependency",
     "@tools/create-new-folder": "file:../create-new-folder",
     "@tools/docs": "file:../docs",
