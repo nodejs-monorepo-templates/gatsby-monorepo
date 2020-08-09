@@ -18,7 +18,7 @@ const spawnOptions = {
   cwd: app,
 } as const
 
-export function runScript(suffix: readonly string[]) {
+export function runScript(...suffix: string[]) {
   const { error, status } = spawnSync(command, [...prefix, ...suffix], spawnOptions)
   if (error) throw error
   return {
