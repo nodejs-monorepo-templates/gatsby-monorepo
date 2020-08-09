@@ -116,7 +116,7 @@ abstract class Dict {
     async () => {
       await this.callCmd('build')
       await this.callCmd('serveApp')
-    }
+    },
   )
 
   public readonly prepublish = new Command(
@@ -294,22 +294,22 @@ abstract class Dict {
       }
 
       app.runScript(command, ...suffix)
-    }
+    },
   )
 
   public readonly buildApp = new Command(
     'Build main application',
-    args => this.callCmd('runAppScript', 'build', ...args)
+    args => this.callCmd('runAppScript', 'build', ...args),
   )
 
   public readonly serveApp = new Command(
     'Serve main application',
-    args => this.callCmd('runAppScript', 'serve', ...args)
+    args => this.callCmd('runAppScript', 'serve', ...args),
   )
 
   public readonly cleanApp = new Command(
     'Clean main application',
-    args => this.callCmd('runAppScript', 'clean', ...args)
+    args => this.callCmd('runAppScript', 'clean', ...args),
   )
 
   public readonly new = new Command(
