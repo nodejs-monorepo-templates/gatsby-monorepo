@@ -16,6 +16,7 @@ if (!command) {
 const spawnOptions = {
   stdio: 'inherit',
   cwd: app,
+  shell: true,
 } as const
 
 export function runScript(...suffix: [string, ...string[]]) {
