@@ -100,6 +100,7 @@ abstract class Dict {
       await this.callCmd('buildMJS')
       await this.callCmd('buildTypescript')
       await this.callCmd('tripleSlashDirectives')
+      await this.callCmd('buildApp')
     },
   )
 
