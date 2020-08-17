@@ -1,5 +1,4 @@
 {
-  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "gatsby": "^2.24.36",
