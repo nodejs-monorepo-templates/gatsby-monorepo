@@ -1,14 +1,14 @@
 dependencies:
-  '@types/node': 14.0.26
+  '@types/node': 14.0.27
   '@types/react': 16.9.45
   react: 16.13.1
-  tslib: 2.0.0
+  tslib: 2.0.1
 lockfileVersion: 5.1
 packages:
-  /@types/node/14.0.26:
+  /@types/node/14.0.27:
     dev: false
     resolution:
-      integrity: sha512-W+fpe5s91FBGE0pEa0lnqGLL4USgpLgs4nokw16SrBBco/gQxuua7KnArSEOd5iaMqbbSHV10vUDkJYJJqpXKA==
+      integrity: sha512-kVrqXhbclHNHGu9ztnAwSncIgJv/FaxmzXJvGXNdcCpV1b8u1/Mi6z6m0vwy0LzKeXFTPLH0NzwmoJ3fNCIq0g==
   /@types/prop-types/15.7.3:
     dev: false
     resolution:
@@ -63,12 +63,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
-  /tslib/2.0.0:
+  /tslib/2.0.1:
     dev: false
     resolution:
-      integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
+      integrity: sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
 specifiers:
-  '@types/node': ^14.0.26
+  '@types/node': ^14.0.27
   '@types/react': ^16.9.45
   react: ^16.13.1
-  tslib: ^2.0.0
+  tslib: ^2.0.1
