@@ -302,7 +302,7 @@ function main({ testPath }) {
     return getResult()
   }
 
-  if (resolvedPath.startsWith(places.apps)) {
+  if (resolvedPath.startsWith(places.app)) {
     mustNotHaveName()
     mustBePrivate()
     mustNotHaveVersion()
