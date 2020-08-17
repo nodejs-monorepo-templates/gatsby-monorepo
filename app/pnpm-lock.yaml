@@ -12952,7 +12952,7 @@ packages:
     resolution:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 specifiers:
-  '@scope-name/scoped-hello-world': 0.0.0
+  '@scope-name/scoped-hello-world': 'file:../packages/scoped-hello-world'
   gatsby: ^2.24.36
-  hello-world: 0.0.0
+  hello-world: 'file:../packages/hello-world'
   tslib: ^2.0.0

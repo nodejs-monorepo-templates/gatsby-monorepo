@@ -4,8 +4,8 @@
   "dependencies": {
     "gatsby": "^2.24.36",
     "tslib": "^2.0.0",
-    "hello-world": "0.0.0",
-    "@scope-name/scoped-hello-world": "0.0.0"
+    "hello-world": "file:../packages/hello-world",
+    "@scope-name/scoped-hello-world": "file:../packages/scoped-hello-world"
   },
   "peerDependencies": {
     "react": "^16.13.1",
