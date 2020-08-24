@@ -1,7 +1,16 @@
 dependencies:
+  '@babel/types': 7.11.0
+  '@mikaelkristiansson/domready': 1.0.10
+  '@reach/router': 1.3.4
   '@scope-name/scoped-hello-world': 'link:../packages/scoped-hello-world'
   gatsby: 2.24.47_gatsby@2.24.47
+  gatsby-legacy-polyfills: 0.0.2
+  gatsby-link: 2.4.13_@reach+router@1.3.4
+  gatsby-react-router-scroll: 3.0.12_@reach+router@1.3.4
   hello-world: 'link:../packages/hello-world'
+  mitt: 2.1.0
+  prop-types: 15.7.2
+  shallow-compare: 1.2.2
   tslib: 2.0.1
 lockfileVersion: 5.1
 packages:
@@ -8413,6 +8422,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-r6lj77KlwqLhIUku9UWYes7KJtsczvolZkzp8hbaDPPaE24OmWl5s539Mytlj22siEQKosZ26qCBgda2PKwoJw==
+  /mitt/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-ILj2TpLiysu2wkBbWjAmww7TkZb65aiQO+DkVdUTBpBXq+MHYiETENkKFMtsJZX1Lf4pe4QOrTSjIfUwN5lRdg==
   /mixin-deep/1.3.2:
     dependencies:
       for-in: 1.0.2
@@ -12956,7 +12969,16 @@ packages:
     resolution:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 specifiers:
+  '@babel/types': ^7.11.0
+  '@mikaelkristiansson/domready': ^1.0.10
+  '@reach/router': ^1.3.4
   '@scope-name/scoped-hello-world': 'file:../packages/scoped-hello-world'
   gatsby: ^2.24.36
+  gatsby-legacy-polyfills: ^0.0.2
+  gatsby-link: ^2.4.13
+  gatsby-react-router-scroll: ^3.0.12
   hello-world: 'file:../packages/hello-world'
+  mitt: ^2.1.0
+  prop-types: ^15.7.2
+  shallow-compare: ^1.2.2
   tslib: ^2.0.0
