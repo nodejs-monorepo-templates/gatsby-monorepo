@@ -11,9 +11,12 @@
     "mitt": "^2.1.0",
     "shallow-compare": "^1.2.2",
     "@babel/types": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "ts-loader": "^8.0.2",
     "tslib": "^2.0.0",
     "hello-world": "file:../packages/hello-world",
-    "@scope-name/scoped-hello-world": "file:../packages/scoped-hello-world"
+    "@scope-name/scoped-hello-world": "file:../packages/scoped-hello-world",
+    "@tools/places": "file:../tools/places"
   },
   "peerDependencies": {
     "react": "^16.13.1",
