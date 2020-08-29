@@ -2,6 +2,7 @@
   "private": true,
   "dependencies": {
     "gatsby": "^2.24.36",
+    "gatsby-plugin-typescript": "^2.4.17",
     "gatsby-legacy-polyfills": "^0.0.2",
     "gatsby-link": "^2.4.13",
     "gatsby-react-router-scroll": "^3.0.12",

@@ -21,3 +21,11 @@ exports.onCreateWebpackConfig = ({
     },
   })
 }
+
+exports.plugins = [
+  {
+    resolve: 'gatsby-plugin-typescript',
+    isTSX: true,
+    allExtensions: true,
+  },
+]
