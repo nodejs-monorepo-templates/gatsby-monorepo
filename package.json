@@ -11,12 +11,15 @@
     "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo-esm/issues"
   },
   "devDependencies": {
-    "tslint": "^6.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tslint": "^6.1.3",
     "typescript": "^3.9.7",
     "toolcheck": "^0.1.4",
-    "tslib": "^2.0.0",
-    "@types/jest": "^26.0.7",
-    "@types/node": "^14.0.26",
+    "tslib": "^2.0.1",
+    "@types/react": "^16.9.45",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.0.27",
     "@tools/scripts": "file:./tools/scripts"
   },
   "scripts": {
@@ -38,6 +41,7 @@
     "test:no-coverage": "execute testWithoutCoverage",
     "build": "execute build",
     "clean": "execute clean",
+    "watch": "execute watch",
     "clean-typescript-build": "execute cleanTypescriptBuild",
     "git-tag-versions": "execute gitTagVersions",
     "git-tag-versions:dry": "execute gitTagVersions --dry",

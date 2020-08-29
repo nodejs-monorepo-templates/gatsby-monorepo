@@ -1,6 +1,7 @@
 import path from 'path'
 import process from 'process'
 import chalk from 'chalk'
+import * as app from '@tools/app'
 import * as places from '@tools/places'
 import { commands, enums, functions } from '../index'
 const { ExitStatusCode } = enums
@@ -99,6 +100,7 @@ abstract class Dict {
       await this.callCmd('buildMJS')
       await this.callCmd('buildTypescript')
       await this.callCmd('tripleSlashDirectives')
+      await this.callCmd('buildApp')
     },
   )
 
@@ -107,6 +109,21 @@ abstract class Dict {
     async () => {
       await this.callCmd('cleanDocs')
       await this.callCmd('cleanTypescriptBuild')
+    },
+  )
+
+  public readonly serve = new Command(
+    'Build and serve main application',
+    async () => {
+      await this.callCmd('build')
+      await this.callCmd('serveApp')
+    },
+  )
+
+  public readonly watch = new Command(
+    'Start a development server',
+    async () => {
+      await this.callCmd('watchApp')
     },
   )
 
@@ -275,6 +292,37 @@ abstract class Dict {
       await this.callCmd('buildDocs')
       await this.callCmd('publishWebPages')
     },
+  )
+
+  public readonly runAppScript = new Command(
+    'Run script from main application',
+    ([command, ...suffix]) => {
+      if (!command) {
+        throw new RangeError('Command cannot be empty')
+      }
+
+      app.runScript(command, ...suffix)
+    },
+  )
+
+  public readonly buildApp = new Command(
+    'Build main application',
+    args => this.callCmd('runAppScript', 'build', ...args),
+  )
+
+  public readonly serveApp = new Command(
+    'Serve main application',
+    args => this.callCmd('runAppScript', 'serve', ...args),
+  )
+
+  public readonly cleanApp = new Command(
+    'Clean main application',
+    args => this.callCmd('runAppScript', 'clean', ...args),
+  )
+
+  public readonly watchApp = new Command(
+    'Start a development server',
+    args => this.callCmd('runAppScript', 'dev', ...args),
   )
 
   public readonly new = new Command(

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<main
+  style={
+    Object {
+      "display": "block",
+      "height": "100%",
+      "margin": "0px",
+      "padding": "0px",
+      "width": "100%",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "display": "block",
+        "fontFamily": "sans-serif",
+        "height": "100%",
+        "textAlign": "center",
+        "verticalAlign": "middle",
+        "width": "100%",
+      }
+    }
+  >
+    hello
+  </h1>
+</main>
+`;

@@ -4,6 +4,7 @@
     "module": "CommonJS",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
+    "jsx": "react",
     "lib": [
       "ES2018",
       "ES2019",

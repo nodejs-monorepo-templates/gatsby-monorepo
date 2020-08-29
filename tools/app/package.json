@@ -1,0 +1,9 @@
+{
+  "name": "@tools/app",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "string-template-format-inspect": "^0.1.7",
+    "@tools/places": "file:../places"
+  }
+}
