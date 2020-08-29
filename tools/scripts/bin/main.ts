@@ -100,6 +100,17 @@ abstract class Dict {
       await this.callCmd('buildMJS')
       await this.callCmd('buildTypescript')
       await this.callCmd('buildApp')
+
+      const { ensureFile, copy } = await import('fs-extra')
+      await ensureFile(path.join(places.dist, '.nojekyll'))
+      await copy(
+        path.join(places.app, 'public'),
+        path.join(places.dist),
+        {
+          recursive: true,
+          overwrite: true,
+        }
+      )
     },
   )
 
