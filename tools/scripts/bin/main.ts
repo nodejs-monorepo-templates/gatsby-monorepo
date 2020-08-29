@@ -120,6 +120,13 @@ abstract class Dict {
     },
   )
 
+  public readonly watch = new Command(
+    'Start a development server',
+    async () => {
+      await this.callCmd('watchApp')
+    },
+  )
+
   public readonly prepublish = new Command(
     'Commands that run before publishing packages',
     async () => {
@@ -311,6 +318,11 @@ abstract class Dict {
   public readonly cleanApp = new Command(
     'Clean main application',
     args => this.callCmd('runAppScript', 'clean', ...args),
+  )
+
+  public readonly watchApp = new Command(
+    'Start a development server',
+    args => this.callCmd('runAppScript', 'dev', ...args),
   )
 
   public readonly new = new Command(
