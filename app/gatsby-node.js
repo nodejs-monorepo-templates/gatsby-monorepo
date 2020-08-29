@@ -8,41 +8,16 @@ const packageNames = fs
   .map(name => path.join(places.packages, name, 'package.json'))
   .filter(filename => fs.existsSync(filename))
   .map(filename => require(filename).name)
-const include = [
-  __dirname,
-  ...packageNames.map(name => path.join(__dirname, 'node_modules', name)),
-]
-const exclude = Object.keys(pkgJson.dependencies)
+const watchIgnored = Object.keys(pkgJson.dependencies)
   .filter(name => !packageNames.includes(name))
-  .map(name => path.join(__dirname, 'node_modules', name))
+  .map(name => path.join('node_modules', name))
 
 exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.jsx?$/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              include,
-              exclude,
-            },
-          },
-        },
-        {
-          test: /\.tsx?$/,
-          use: {
-            loader: 'ts-loader',
-            options: {
-              include,
-              exclude,
-            },
-          },
-        },
-      ],
+    watchOptions: {
+      ignored: watchIgnored,
     },
   })
 }
