@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import HelloWorld from 'hello-world'
-import message from '@scope-name/scoped-hello-world'
+import { message } from '@scope-name/scoped-hello-world'
 
 const Home = () => <>
   <Helmet>
