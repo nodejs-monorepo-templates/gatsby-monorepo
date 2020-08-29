@@ -1,8 +1,10 @@
 {
   "private": true,
   "dependencies": {
+    "react-helmet": "^6.1.0",
     "gatsby": "^2.24.52",
     "gatsby-plugin-typescript": "^2.4.18",
+    "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-legacy-polyfills": "^0.0.4",
     "gatsby-link": "^2.4.13",
     "gatsby-react-router-scroll": "^3.0.12",
@@ -18,6 +20,7 @@
     "babel-loader": "^8.1.0",
     "ts-loader": "^8.0.3",
     "tslib": "^2.0.1",
+    "@types/react-helmet": "^6.1.0",
     "hello-world": "file:../packages/hello-world",
     "@scope-name/scoped-hello-world": "file:../packages/scoped-hello-world",
     "@tools/places": "file:../tools/places"

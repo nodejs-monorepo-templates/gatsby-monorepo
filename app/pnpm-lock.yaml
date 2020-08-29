@@ -4,11 +4,13 @@ dependencies:
   '@reach/router': 1.3.4
   '@scope-name/scoped-hello-world': 'link:../packages/scoped-hello-world'
   '@tools/places': 'link:../tools/places'
+  '@types/react-helmet': 6.1.0
   babel-loader: 8.1.0
   event-source-polyfill: 1.0.17
   gatsby: 2.24.52_gatsby@2.24.52
   gatsby-legacy-polyfills: 0.0.4
   gatsby-link: 2.4.13_@reach+router@1.3.4
+  gatsby-plugin-react-helmet: 3.3.10_35e2c180cc827f4a495cd802bea7644b
   gatsby-plugin-typescript: 2.4.18_gatsby@2.24.52
   gatsby-react-router-scroll: 3.0.12_@reach+router@1.3.4
   hello-world: 'link:../packages/hello-world'
@@ -16,6 +18,7 @@ dependencies:
   prop-types: 15.7.2
   query-string: 6.13.1
   react-error-overlay: 6.0.7
+  react-helmet: 6.1.0
   shallow-compare: 1.2.2
   ts-loader: 8.0.3
   tslib: 2.0.1
@@ -1846,6 +1849,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-h0NbqXN/tJuBY/xggZSej1SKQEstbHO7J/omt1tYoFGmj3YXOodZKbbqD4mNDh7zvEGYd7YFrac1LTtAr3xsYQ==
+  /@types/react-helmet/6.1.0:
+    dependencies:
+      '@types/react': 16.9.46
+    dev: false
+    resolution:
+      integrity: sha512-PYRoU1XJFOzQ3BHvWL1T8iDNbRjdMDJMT5hFmZKGbsq09kbSqJy61uwEpTrbTNWDopVphUT34zUSVLK9pjsgYQ==
   /@types/react/16.9.46:
     dependencies:
       '@types/prop-types': 15.7.3
@@ -5803,6 +5812,19 @@ packages:
       gatsby: ^2.0.0
     resolution:
       integrity: sha512-zpVFNKDNMpvTwe/hj6C27sc/POVxxGp0ZidoTDFd6so/f+Mc0OJQQDEIzs122oYBnuspPya+0+wWaph4QcadSQ==
+  /gatsby-plugin-react-helmet/3.3.10_35e2c180cc827f4a495cd802bea7644b:
+    dependencies:
+      '@babel/runtime': 7.11.2
+      gatsby: 2.24.52_gatsby@2.24.52
+      react-helmet: 6.1.0
+    dev: false
+    engines:
+      node: '>=10.13.0'
+    peerDependencies:
+      gatsby: ^2.0.0
+      react-helmet: ^5.1.3 || ^6.0.0
+    resolution:
+      integrity: sha512-AcXYwmS3r298JWs6iQ3OLNxIe8L8i5a2iSdLr/SDMpHqumYm7q/vB9kCX0et5wM7DIuZ7aPXDrdi5yDCAvU5lg==
   /gatsby-plugin-typescript/2.4.18_gatsby@2.24.52:
     dependencies:
       '@babel/core': 7.11.4
@@ -10105,6 +10127,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
+  /react-fast-compare/3.2.0:
+    dev: false
+    resolution:
+      integrity: sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
   /react-focus-lock/2.4.1_react@16.13.1:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -10119,6 +10145,17 @@ packages:
       react: ^16.8.0
     resolution:
       integrity: sha512-c5ZP56KSpj9EAxzScTqQO7bQQNPltf/W1ZEBDqNDOV1XOIwvAyHX0O7db9ekiAtxyKgnqZjQlLppVg94fUeL9w==
+  /react-helmet/6.1.0:
+    dependencies:
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+      react-fast-compare: 3.2.0
+      react-side-effect: 2.1.0
+    dev: false
+    peerDependencies:
+      react: '>=16.3.0'
+    resolution:
+      integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
   /react-hot-loader/4.12.21:
     dependencies:
       fast-levenshtein: 2.0.6
@@ -10227,6 +10264,12 @@ packages:
         optional: true
     resolution:
       integrity: sha512-BZIO3GaEs0Or1OhA5C//n1ibUP1HdjJmqUVUsOCMxwoIpaCocbB9TFKwHOkBa/nyYy3slirqXeiPYGwdSDiseA==
+  /react-side-effect/2.1.0:
+    dev: false
+    peerDependencies:
+      react: ^16.3.0
+    resolution:
+      integrity: sha512-IgmcegOSi5SNX+2Snh1vqmF0Vg/CbkycU9XZbOHJlZ6kMzTmi3yc254oB1WCkgA7OQtIAoLmcSFuHTc/tlcqXg==
   /react-style-singleton/2.1.0_react@16.13.1:
     dependencies:
       get-nonce: 1.0.1
@@ -12941,11 +12984,13 @@ specifiers:
   '@reach/router': ^1.3.4
   '@scope-name/scoped-hello-world': 'file:../packages/scoped-hello-world'
   '@tools/places': 'file:../tools/places'
+  '@types/react-helmet': ^6.1.0
   babel-loader: ^8.1.0
   event-source-polyfill: ^1.0.17
   gatsby: ^2.24.52
   gatsby-legacy-polyfills: ^0.0.4
   gatsby-link: ^2.4.13
+  gatsby-plugin-react-helmet: ^3.3.10
   gatsby-plugin-typescript: ^2.4.18
   gatsby-react-router-scroll: ^3.0.12
   hello-world: 'file:../packages/hello-world'
@@ -12953,6 +12998,7 @@ specifiers:
   prop-types: ^15.7.2
   query-string: ^6.13.1
   react-error-overlay: ^6.0.7
+  react-helmet: ^6.1.0
   shallow-compare: ^1.2.2
   ts-loader: ^8.0.3
   tslib: ^2.0.1
