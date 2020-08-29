@@ -109,7 +109,7 @@ abstract class Dict {
         {
           recursive: true,
           overwrite: true,
-        }
+        },
       )
     },
   )
