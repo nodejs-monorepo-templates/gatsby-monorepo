@@ -1,5 +1,3 @@
-const appPkgJson = require('./package.json')
-
 /**
  * Interface of `package.json`
  * @typedef PkgJson
@@ -16,18 +14,19 @@ const appPkgJson = require('./package.json')
  */
 
 /**
- * Set dependency version
+ * Move a dependency (if exist) from `[dependencies]` to `[peerDependencies]`
  * @param {PkgJson} pkgJson Target `package.json`
  * @param {string} name Name of target dependency
- * @param {string} version Intended version of target dependency
  */
-function setDependencyVersion(pkgJson, name, version) {
-  if (!pkgJson.dependencies) {
-    pkgJson.dependencies = {}
-  }
+function moveProdToPeer(pkgJson, name) {
+  if (!pkgJson.dependencies) return false
 
   if (name in pkgJson.dependencies) {
-    pkgJson.dependencies[name] = version
+    if (!pkgJson.peerDependencies) {
+      pkgJson.peerDependencies = {}
+    }
+    pkgJson.peerDependencies[name] = pkgJson.dependencies[name]
+    delete pkgJson.dependencies[name]
     return true
   }
 
@@ -40,8 +39,8 @@ function setDependencyVersion(pkgJson, name, version) {
  * @param {Ctx} ctx Context object
  */
 function readPackage(pkg, ctx) {
-  if (setDependencyVersion(pkg, '@types/react', appPkgJson.peerDependencies['@types/react'])) {
-    ctx.log(`Corrected @types/react of ${pkg.name}`)
+  if (moveProdToPeer(pkg, '@types/react')) {
+    ctx.log(`Made @types/react of ${pkg.name} a peer dependency`)
   }
   return pkg
 }
