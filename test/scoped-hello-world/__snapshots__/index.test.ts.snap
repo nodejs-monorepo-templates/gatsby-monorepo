@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`message matches snapshot 1`] = `"Hello, World!!"`;
+
+exports[`title matches snapshot 1`] = `"❤ Hello, World!! ❤"`;
