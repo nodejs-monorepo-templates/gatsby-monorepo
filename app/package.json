@@ -2,7 +2,7 @@
   "private": true,
   "dependencies": {
     "react-helmet": "^6.1.0",
-    "gatsby": "^2.24.52",
+    "gatsby": "^2.24.54",
     "gatsby-plugin-typescript": "^2.4.18",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-legacy-polyfills": "^0.0.4",
@@ -16,7 +16,7 @@
     "prop-types": "^15.7.2",
     "mitt": "^2.1.0",
     "shallow-compare": "^1.2.2",
-    "@babel/types": "^7.11.0",
+    "@babel/types": "^7.11.5",
     "babel-loader": "^8.1.0",
     "ts-loader": "^8.0.3",
     "tslib": "^2.0.1",
@@ -28,7 +28,7 @@
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "@types/react": "^16.9.48"
+    "@types/react": "^16.9.49"
   },
   "scripts": {
     "build": "gatsby build",
