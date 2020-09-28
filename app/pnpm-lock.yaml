@@ -9,7 +9,7 @@ dependencies:
   babel-loader: 8.1.0
   event-source-polyfill: 1.0.20
   gatsby: 2.24.65_gatsby@2.24.65
-  gatsby-legacy-polyfills: 0.0.4
+  gatsby-legacy-polyfills: 0.0.5
   gatsby-link: 2.4.14_@reach+router@1.3.4
   gatsby-plugin-react-helmet: 3.3.11_e96b0fbe44c2bba1735f5b956340461b
   gatsby-plugin-typescript: 2.4.20_gatsby@2.24.65
@@ -5886,6 +5886,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-BDlY9jkhEhqpQN5yvfnJYt8wTRzBOEtIQZnWHzuE7b6tYHsngxbfIMLN3UBOs9t5ZUqcPKc1C0J0NKG6NhC4Qw==
+  /gatsby-legacy-polyfills/0.0.5:
+    dependencies:
+      core-js-compat: 3.6.5
+    dev: false
+    resolution:
+      integrity: sha512-vxOmb8btMTiBb4tSAcAOX+zkRSppt9BkCadvPpURjBiQYiSYbs0EdQO0+DzmyaIQ4hX18OYjlqWGgcxI8Nddvg==
   /gatsby-link/2.4.14_@reach+router@1.3.4:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -13226,7 +13232,7 @@ specifiers:
   babel-loader: ^8.1.0
   event-source-polyfill: ^1.0.17
   gatsby: ^2.24.54
-  gatsby-legacy-polyfills: ^0.0.4
+  gatsby-legacy-polyfills: ^0.0.5
   gatsby-link: ^2.4.13
   gatsby-plugin-react-helmet: ^3.3.10
   gatsby-plugin-typescript: ^2.4.18
