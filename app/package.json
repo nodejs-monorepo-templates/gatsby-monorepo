@@ -3,7 +3,7 @@
   "dependencies": {
     "react-helmet": "^6.1.0",
     "gatsby": "^2.24.66",
-    "gatsby-plugin-typescript": "^2.4.21",
+    "gatsby-plugin-typescript": "^2.4.20",
     "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-legacy-polyfills": "^0.0.5",
     "gatsby-link": "^2.4.15",
