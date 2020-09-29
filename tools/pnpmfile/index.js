@@ -16,32 +16,52 @@
 /**
  * Move a dependency (if exist) from `[dependencies]` to `[peerDependencies]`
  * @param {PkgJson} pkgJson Target `package.json`
- * @param {string} name Name of target dependency
+ * @param {string | (name: string) => boolean} pattern Name or pattern of target dependency
  */
-function moveProdToPeer(pkgJson, name) {
+function moveProdToPeer(pkgJson, pattern) {
   if (!pkgJson.dependencies) return false
 
-  if (name in pkgJson.dependencies) {
+  /**
+   * @param {string} name
+   */
+  function act(name) {
     if (!pkgJson.peerDependencies) {
       pkgJson.peerDependencies = {}
     }
     pkgJson.peerDependencies[name] = pkgJson.dependencies[name]
     delete pkgJson.dependencies[name]
-    return true
   }
 
-  return false
+  switch (typeof pattern) {
+    case 'string': {
+      if (pattern in pkgJson.dependencies) {
+        act(pattern)
+        return true
+      }
+      return false
+    }
+    case 'function': {
+      let count = 0
+      for (const name in pkgJson.dependencies) {
+        if (pattern(name)) {
+          act(pattern)
+          count += 1
+        }
+      }
+      return count
+    }
+  }
 }
 
 /**
  * If a dependency named `name` exists in `pkg.dependencies`, move it to `pkg.peerDependencies` and log
  * @param {PkgJson} pkg Target package
- * @param {string} name Dependency name
+ * @param {string | (name: string) => boolean} pattern Dependency name
  * @param {Ctx} ctx Context object
  */
-function moveProdToPeerLog(pkg, name, ctx) {
-  if (moveProdToPeer(pkg, name)) {
-    ctx.log(`Made ${name} of ${pkg.name} a peer dependency`)
+function moveProdToPeerLog(pkg, pattern, ctx) {
+  if (moveProdToPeer(pkg, pattern)) {
+    ctx.log(`Made ${pattern} of ${pkg.name} a peer dependency`)
   }
 }
 
