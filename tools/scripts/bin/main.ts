@@ -303,7 +303,7 @@ abstract class Dict {
         throw new RangeError('Command cannot be empty')
       }
 
-      app.runScript(command, ...suffix)
+      app.runScript(command, ...suffix).exit()
     },
   )
 
