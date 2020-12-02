@@ -1,7 +1,7 @@
+import { title, message } from '@scope-name/scoped-hello-world'
+import HelloWorld from 'hello-world'
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import HelloWorld from 'hello-world'
-import { title, message } from '@scope-name/scoped-hello-world'
 
 const Home = () =>
   <>

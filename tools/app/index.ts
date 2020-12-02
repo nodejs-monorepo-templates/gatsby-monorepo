@@ -1,7 +1,7 @@
-import process from 'process'
-import { spawnSync } from 'child_process'
-import { dbg } from 'string-template-format-inspect'
 import { app } from '@tools/places'
+import { spawnSync } from 'child_process'
+import process from 'process'
+import { dbg } from 'string-template-format-inspect'
 
 const {
   NODE_SCRIPT_RUNNER = 'pnpm run',
