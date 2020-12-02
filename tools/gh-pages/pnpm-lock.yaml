@@ -2,7 +2,7 @@ dependencies:
   '@tools/preloaded-node': 'link:../preloaded-node'
   '@types/gh-pages': 3.0.0
   gh-pages: 3.1.0
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@types/gh-pages/3.0.0:
     dev: false
@@ -24,7 +24,7 @@ packages:
       integrity: sha1-r2rId6Jcx/dOBYiUdThY39sk/bY=
   /async/2.6.3:
     dependencies:
-      lodash: 4.17.15
+      lodash: 4.17.20
     dev: false
     resolution:
       integrity: sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
@@ -201,10 +201,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
-  /lodash/4.17.15:
+  /lodash/4.17.20:
     dev: false
     resolution:
-      integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+      integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
   /make-dir/3.1.0:
     dependencies:
       semver: 6.3.0

@@ -1,7 +1,7 @@
 dependencies:
   '@tools/places': 'link:../places'
   string-template-format-inspect: 0.1.8
-lockfileVersion: 5.1
+lockfileVersion: 5.2
 packages:
   /@types/node/14.6.2:
     dev: false
