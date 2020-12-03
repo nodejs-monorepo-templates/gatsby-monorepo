@@ -1,7 +1,7 @@
 devDependencies:
   '@tools/scripts': 'link:tools/scripts'
   '@types/jest': 26.0.14
-  '@types/node': 14.11.2
+  '@types/node': 14.14.10
   '@types/react': 16.9.49
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
@@ -78,10 +78,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ge4xZ3vSBornVYlDnk7yZ0gK6ChHf/CHB7Gl1I0Jhah8DDnEQqBzgohYG4FX4p81TNirSETOiSyn+y1r9/IR6w==
-  /@types/node/14.11.2:
+  /@types/node/14.14.10:
     dev: true
     resolution:
-      integrity: sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
+      integrity: sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
   /@types/node/14.6.1:
     dev: true
     resolution:
@@ -576,7 +576,7 @@ packages:
 specifiers:
   '@tools/scripts': 'file:./tools/scripts'
   '@types/jest': ^26.0.14
-  '@types/node': ^14.11.2
+  '@types/node': ^14.14.10
   '@types/react': ^16.9.49
   react: ^17.0.0
   react-dom: ^17.0.0

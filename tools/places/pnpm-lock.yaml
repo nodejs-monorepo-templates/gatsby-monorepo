@@ -7,4 +7,4 @@ packages:
     resolution:
       integrity: sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
 specifiers:
-  '@types/node': ^14.11.2
+  '@types/node': ^14.14.10
