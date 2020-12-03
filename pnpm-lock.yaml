@@ -2,7 +2,7 @@ devDependencies:
   '@tools/scripts': 'link:tools/scripts'
   '@types/jest': 26.0.14
   '@types/node': 14.14.10
-  '@types/react': 16.9.49
+  '@types/react': 17.0.0
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   toolcheck: 0.1.4
@@ -94,13 +94,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
-  /@types/react/16.9.49:
+  /@types/react/17.0.0:
     dependencies:
       '@types/prop-types': 15.7.3
       csstype: 3.0.2
     dev: true
     resolution:
-      integrity: sha512-DtLFjSj0OYAdVLBbyjhuV9CdGVHCkHn2R+xr3XkBvK2rS1Y1tkc14XSGjYgm5Fjjr90AxH9tiSzc1pCFMGO06g==
+      integrity: sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
   /@types/yargs-parser/15.0.0:
     dev: true
     resolution:
@@ -577,7 +577,7 @@ specifiers:
   '@tools/scripts': 'file:./tools/scripts'
   '@types/jest': ^26.0.14
   '@types/node': ^14.14.10
-  '@types/react': ^16.9.49
+  '@types/react': ^17.0.0
   react: ^17.0.0
   react-dom: ^17.0.0
   toolcheck: ^0.1.4
