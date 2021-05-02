@@ -10,7 +10,7 @@ specifiers:
   '@types/yargs': ^15.0.7
   fs-extra: ^9.0.1
   inquirer: ^8.0.0
-  yargs: ^16.0.3
+  yargs: ^17.0.0
 
 dependencies:
   '@tools/pkgcfg': link:../pkgcfg
@@ -22,7 +22,7 @@ dependencies:
   '@types/yargs': 15.0.10
   fs-extra: 9.0.1
   inquirer: 8.0.0
-  yargs: 16.1.1
+  yargs: 17.0.0
 
 packages:
 
@@ -356,9 +356,9 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /yargs/16.1.1:
-    resolution: {integrity: sha512-hAD1RcFP/wfgfxgMVswPE+z3tlPFtxG8/yWUrG2i17sTWGCGqWnxKcLTF4cUKDUK8fzokwsmO9H0TDkRbMHy8w==}
-    engines: {node: '>=10'}
+  /yargs/17.0.0:
+    resolution: {integrity: sha512-gbtedDPfBgG40iLbaRXhqYJycUYqFVZQLIxl1cG5Ez/xZL/47TetSYzPSIixkWa36GKHr9D/o/oSG1vHXF4zTw==}
+    engines: {node: '>=12'}
     dependencies:
       cliui: 7.0.4
       escalade: 3.1.1
