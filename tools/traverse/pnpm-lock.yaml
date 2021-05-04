@@ -4,24 +4,17 @@ specifiers:
   '@types/fs-extra': ^9.0.1
   fast-traverse: ^0.1.7
   fs-extra: ^10.0.0
-  iter-tools: ^6.2.6
+  iter-tools: ^7.0.0
   ts-pipe-compose: ^0.2.0
 
 dependencies:
   '@types/fs-extra': 9.0.4
   fast-traverse: 0.1.7
   fs-extra: 10.0.0
-  iter-tools: 6.2.6
+  iter-tools: 7.1.2
   ts-pipe-compose: 0.2.1
 
 packages:
-
-  /@babel/runtime-corejs2/7.12.5:
-    resolution: {integrity: sha512-kt5YpZ7F5A05LOgQuaMXXmcxakK/qttf5C/E1BJPA3Kf5PanbjPzDoXN+PIslUnjUxpuKblCsXyP0QfMiqyKqA==}
-    dependencies:
-      core-js: 2.6.12
-      regenerator-runtime: 0.13.7
-    dev: false
 
   /@babel/runtime/7.12.5:
     resolution: {integrity: sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==}
@@ -37,16 +30,6 @@ packages:
 
   /@types/node/14.14.10:
     resolution: {integrity: sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==}
-    dev: false
-
-  /core-js/2.6.12:
-    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
-    deprecated: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
-    requiresBuild: true
-    dev: false
-
-  /dequeue/1.0.5:
-    resolution: {integrity: sha1-EPHO8H4yNLIdyzj0v6LWYDSrZ8c=}
     dev: false
 
   /fast-traverse/0.1.7:
@@ -69,16 +52,10 @@ packages:
     resolution: {integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==}
     dev: false
 
-  /iter-tools/6.2.6:
-    resolution: {integrity: sha512-DlBSv7cIrM214wYFxyz4vg98BmEpxFTGx37ei/ktYT05shJHoDwz7wuaPx3XhaJi1uGEc5bM+vUBWhm3z6yNIg==}
+  /iter-tools/7.1.2:
+    resolution: {integrity: sha512-pIXrFK1Mnm27janeYar6M1uhHE7eVPLZwo0FC2JxRLM41nJu0lACwQMam9L0ws8EOZl+mn6Vvq/QqObls53l3w==}
     dependencies:
       '@babel/runtime': 7.12.5
-      '@babel/runtime-corejs2': 7.12.5
-      dequeue: 1.0.5
-      little-ds-toolkit: 1.1.1
-      typescript-tuple: 2.2.1
-      typescript-union: 0.1.2
-      utility-types: 3.10.0
     dev: false
 
   /jsonfile/6.1.0:
@@ -87,10 +64,6 @@ packages:
       universalify: 2.0.0
     optionalDependencies:
       graceful-fs: 4.2.4
-    dev: false
-
-  /little-ds-toolkit/1.1.1:
-    resolution: {integrity: sha512-Zl5flhnd5W6nhRCyoL1bNlU8M5CWFp6SItMmK4pj39LKgzQD7LGg591OJ0jwDKat7mjHvJVkOyJT+BXOQH4iXw==}
     dev: false
 
   /regenerator-runtime/0.13.7:
@@ -106,35 +79,7 @@ packages:
     resolution: {integrity: sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==}
     dev: false
 
-  /typescript-compare/0.0.2:
-    resolution: {integrity: sha512-8ja4j7pMHkfLJQO2/8tut7ub+J3Lw2S3061eJLFQcvs3tsmJKp8KG5NtpLn7KcY2w08edF74BSVN7qJS0U6oHA==}
-    dependencies:
-      typescript-logic: 0.0.0
-    dev: false
-
-  /typescript-logic/0.0.0:
-    resolution: {integrity: sha512-zXFars5LUkI3zP492ls0VskH3TtdeHCqu0i7/duGt60i5IGPIpAHE/DWo5FqJ6EjQ15YKXrt+AETjv60Dat34Q==}
-    dev: false
-
-  /typescript-tuple/2.2.1:
-    resolution: {integrity: sha512-Zcr0lbt8z5ZdEzERHAMAniTiIKerFCMgd7yjq1fPnDJ43et/k9twIFQMUYff9k5oXcsQ0WpvFcgzK2ZKASoW6Q==}
-    dependencies:
-      typescript-compare: 0.0.2
-    dev: false
-
-  /typescript-union/0.1.2:
-    resolution: {integrity: sha512-pzfdtUZ8teglF69/dllzgd6yV7ikoszPHVyOkl4WGICRhTJgCTwL3+ZnnF/hvII536VbsNMQfd9GmLBNhtsmgg==}
-    dependencies:
-      typescript-tuple: 2.2.1
-      utility-types: 3.10.0
-    dev: false
-
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
     engines: {node: '>= 10.0.0'}
-    dev: false
-
-  /utility-types/3.10.0:
-    resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
-    engines: {node: '>= 4'}
     dev: false
