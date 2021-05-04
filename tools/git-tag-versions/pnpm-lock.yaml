@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@tools/places': file:../places
-  '@types/yargs': ^15.0.7
+  '@types/yargs': ^16.0.0
   chalk: ^4.1.0
   git-ts: ^0.0.7
   nested-workspace-helper: ^0.2.15
@@ -10,7 +10,7 @@ specifiers:
 
 dependencies:
   '@tools/places': link:../places
-  '@types/yargs': 15.0.10
+  '@types/yargs': 16.0.1
   chalk: 4.1.0
   git-ts: 0.0.7
   nested-workspace-helper: 0.2.15
@@ -73,6 +73,12 @@ packages:
 
   /@types/yargs/15.0.10:
     resolution: {integrity: sha512-z8PNtlhrj7eJNLmrAivM7rjBESG6JwC5xP3RVk12i/8HVP7Xnx/sEmERnRImyEuUaJfO942X0qMOYsoupaJbZQ==}
+    dependencies:
+      '@types/yargs-parser': 15.0.0
+    dev: false
+
+  /@types/yargs/16.0.1:
+    resolution: {integrity: sha512-x4HABGLyzr5hKUzBC9dvjciOTm11WVH1NWonNjGgxapnTHu5SWUqyqn0zQ6Re0yQU0lsQ6ztLCoMAKDGZflyxA==}
     dependencies:
       '@types/yargs-parser': 15.0.0
     dev: false
