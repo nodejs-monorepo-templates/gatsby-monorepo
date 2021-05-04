@@ -5,7 +5,7 @@
     "gatsby": "^2.24.66",
     "gatsby-plugin-typescript": "^2.4.20",
     "gatsby-plugin-react-helmet": "^3.3.12",
-    "gatsby-legacy-polyfills": "^0.0.5",
+    "gatsby-legacy-polyfills": "^0.7.0",
     "gatsby-link": "^2.4.15",
     "gatsby-react-router-scroll": "^3.0.14",
     "event-source-polyfill": "^1.0.20",
